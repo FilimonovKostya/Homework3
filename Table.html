@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Любимые таблицы</title>
+  </head>
+  <body>
+    <center>
+    <table border="1">
+      <caption>Домашка по таблицам с применением различных css свойств</caption>
+      <tr>
+        <th colspan="3">Здесь мы отработаем 3 псведокласса</th>
+        <th rowspan="2" class="yellow" valign="bottom">Казалось бы</th>
+        <th rowspan="2" class="blue" valign="top">Причем тут</th>
+        <th colspan="3">Более подробней про :nth-child</th>
+        <th rowspan="2" colspan="3">
+          
+          <a href="/img/oririnal_check.png" target="blank"><img src="img/original.png" width="300" height="300" />
+        </th>
+      </tr>
+      <tr >
+        <td class="firs_last" ><ol>
+          <li>Здесь пробуем(зеленый)</li>
+          <li>first-child</li>
+          <li>который</li>
+          <li>должен выбрать</li>
+          <li>самый первый элемент списка</li>
+          <li>То есть выберет 1 пункт</li>
+          <li>который будет  зеленым</li>
+          <li>затем тоже самое и</li>
+          <li>c выборкой last-child</li>
+          <li>выберет самый последний </li>
+          <li>элемент списка</li>
+          <li>и он должен быть красным</li>
+        </ol></td>
+        <td colspan="2" class="jump">  <ul>
+          <li>Здесь попробуем задать</li>
+          <li>стиль перепрыгнув класс</li>
+          <li>то есть пропишем класс </li>
+          <li>и благодаря этому классу</li>
+          <li>сможем перепрыгнуть </li>
+          <li> на 3 элемент списка</li>
+          <li>не знаю где такое нужно</li>
+          <li>но типо знаю что есть</li>
+          <li>хотя это можно сделать</li>
+          <li>и с помощью nth-child</li>
+          <li>но это уже сосвем</li>
+          <li>другая история =3</li>
+        </ul></td>
+        <td>здесь применяем nth-child
+        <ol type="I" class="nth">
+          <li>nth-child(нечет бордо)</li>
+          <li>позволяет нам выбрать(четные синий)</li>
+          <li>четные или нечетные </li>
+          <li>элементы списка </li>
+          <li>кароче</li>
+          <li>используется для добавления</li>
+          <li> стиля к элементам</li>
+          <li> основе нумерации в дереве элементов</li>
+        </ol>  
+        </td>
+        <td>Ещё щепотка nth-child
+          <ol type="I" reversed class="nth_child_up">
+            <li>также можно выбирать</li>
+            <li>не только четные или нечетные</li>
+            <li>можно задавать своего</li>
+            <li>некие формулы для</li>
+            <li>выборки элементов</li>
+            <li>3n+2</li>
+            <li>выберет через 3</li>
+            <li>1,4,7 (будут голубыми )</li>
+          </ol>
+        </td>
+        <td>псведокласс :not
+          <ul type="circle" class="note">
+            <li>Суть этого псведокласса</li>
+            <li>в том,что выбирутся</li>
+            <li>все элементы,кроме тех</li>
+            <li>которые мы зададим</li>
+            <li>его также можно комбиировать </li>
+            <li>с другими псевдоклассами</li>
+            <li>покрасим в корчиневый цвет</li>
+            <li>все,кроме последнего элемента из списка</li>
+            <li>и первого </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">Напишем ниже какой-то текст и поработаем с ним</td>
+        <td>Не,надо бы примеры давать</td>
+        <td>Чет я сильно замарочился </td>
+        <td colspan="3">Мне так кажется</td>
+        <td rowspan="2">Вообщем, постараюсь делать по тз</td>
+        <td>А то что-то разогнался</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Попробуем здесь  применить тег <b><i>nav</i></b> </td>
+        <td rowspan="3">Без понятия что еще можно писать</td>
+        <td rowspan="2">Всё же сложно самому что-то придумывать</td>
+        <td>Впринципе всего хватает</td>
+        <td>Только не понимаю ,зачем хедер и футер</td>
+        <td colspan="3">ТУпо вставить и не думать зачем..</td>
+        <td>Не буду их вставлять</td>
+      </tr>
+      <tr>
+        <td colspan="5">Не ну с таблицей запарился</td>
+        <td>по красоте</td>
+        <td rowspan="2">за дизайн сори</td>
+      </tr>
+      <tr>
+        <td><mark>хотя  не понимаю ,зачем в таблицу вставлять это</mark></td>
+        <td>я же не дизайнер</td>
+        <td colspan="2">макета то нет</td>
+        <td colspan="3">сложно из своей головы верстать</td>
+        <td>напичкал тупо как индейку эту таблицу</td>
+      </tr>
+      <tr>
+        <td rowspan="3"><nav >
+          <li><a href="http://htmlbook.ru/css/nth-child" target="blank">Кидаю на nth-child</a></li>
+          <li><a href="http://htmlbook.ru/css/not" target="blank">Кидаю на :not</a></li>
+          <li><a href="/img/mem.jpg">Кидаю на мемчик</a></li>
+        </nav></td>
+        <td rowspan="2">Сойдет</td>
+        <td>Думаю,надо показать</td>
+        <td>что вроде шаришь</td>
+        <td>в чём-то</td>
+        <td>а то эти пихания хеадеров</td>
+        <td>и футеров</td>
+        <td rowspan="2">будто сайт верстаю</td>
+        <td>таблицы усвоил</td>
+        <td>имею представление</td>
+      </tr>
+      <tr>
+        <td rowspan="2">хотя таблицы сложные</td>
+        <td rowspan="2">Just stop it</td>
+        <td rowspan="2">To be or not To be</td>
+        <td>Еще и сложно ерунду писать</td>
+        <td rowspan="3">Уже устал чет придумывать</td>
+        <td colspan="2">Короче идет текст рыба</td>
+      </tr>
+      <tr>
+        <td>Гарри Поттер</td>
+        <td>Гермиона</td>
+        <td>Джон Уизли</td>
+        <td>Дарк Малфой</td>
+        <td>Воленедеморт</td>
+      </tr>
+      <tr>
+        <td>Похоже будто бред сумасшедшего</td>
+        <td colspan="2">а оно так и выглядит</td>
+        <td>В дз надо больше конкертики)</td>
+        <td>лорем пунтус</td>
+        <td>люблю картошку</td>
+        <td>фронтенд интересная вещь</td>
+        <td colspan="2">Конец таблицы</td>
+      </tr>
+    </table>
+    </center>
+  </body>
+</html>

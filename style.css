@@ -1,0 +1,81 @@
+table:not(.yellow):not(.blue) {
+  border-collapse: collapse;
+  border-color: darkturquoise;
+  background: url("/img/fon.jpg");
+  color: white;
+}
+caption {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  color: darkmagenta;
+  margin-bottom: 5px;
+}
+.blue {
+  background: linear-gradient(75deg, #681be4, #4fca9b);
+  color: white;
+  font-style: italic;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+.yellow {
+  background: radial-gradient(rgb(168, 68, 214), #2623d1);
+  color: white;
+  font-size: large;
+  letter-spacing: 0.3em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* Отмечает 1 элемент списка в зеленый */
+.firs_last li:first-child {
+  background-color: green;
+}
+/* Отмечает 1 элемент списка в красный */
+.firs_last li:last-child {
+  background-color: red;
+}
+/* Задаем стили всем кроме 3 первых элементов списк */
+.jump li + li + li + li {
+  color: hsl(335, 100%, 51%);
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+}
+/* задали  параметры для четных  */
+.nth li:nth-last-child(odd) {
+  color: #0602e6;
+  font-weight: bolder;
+  font-style: italic;
+}
+/* задали параметры для нечетных */
+.nth li:nth-last-child(even) {
+  color: rgb(148, 48, 35);
+  font-weight: bold;
+  letter-spacing: 1.7px;
+  font-family: fantasy;
+}
+/* здесь применим магию, этой сортировкой можно быбрать не только чет или нечет */
+.nth_child_up li:nth-child(3n + 2) {
+  color: dodgerblue;
+  font-size: 12px;
+  font-weight: bolder;
+}
+/* Кароче,not самый классный,у нас всё изменится кроме первого и последнего */
+.note li:not(:first-child):not(:last-child) {
+  background-color: darkorange;
+}
+a:hover {
+  opacity: 0.5;
+}
+/* идут стили для навигации */
+nav li a {
+  text-decoration: none;
+  color: deeppink;
+  font-size: 20px;
+}
+nav li {
+  list-style: none;
+  text-align: center;
+}
+nav li a:hover {
+  color: lightgreen;
+  font-size: 25px;
+}
